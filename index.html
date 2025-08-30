@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мероприятия Владивостока</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Мероприятия Владивостока</h1>
+    <input type="search" id="search" placeholder="Поиск..." />
+    <button id="toggleTheme">Тема</button>
+    <button id="toggleView">Список / Календарь / Карта</button>
+    <label><input type="checkbox" id="weekendOnly"> На выходных</label>
+  </header>
+
+  <main>
+    <section id="listView" class="view"></section>
+    <section id="calendarView" class="view" style="display:none">
+      <div id='calendar'></div>
+    </section>
+    <section id="mapView" class="view" style="display:none">
+      <div id="map" style="height:500px"></div>
+    </section>
+  </main>
+
+  <button id="loadMore">Показать ещё</button>
+
+  <script src="assets/js/app.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.js'></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
